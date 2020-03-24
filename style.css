@@ -1,0 +1,183 @@
+body{
+    min-width: 320px;
+    font-size: 14px;
+    font-family: font-family: 'Playfair Display', serif;
+    color: #626262;
+   
+}
+
+img{
+ max-width: 100%;
+ height: auto;
+}
+
+a{
+  color: #b4ad9e;
+}
+a:hover{
+ color: #898377;
+}
+
+p{
+  line-height: 1-5rem;
+}
+h2,h3{
+  margin: 1rem 0;
+  font-size: 30px;
+}
+header .navbar-light{
+  background-color: green;
+}
+
+header .navbar-brand{
+  font-family: 'Inconsolata',monospace;
+  font-size: 30px;
+  color:#0000;
+  text-transform: uppercase;
+}
+
+header .nav-item{
+  text-transform: uppercase;
+  margin-left: 50px;
+}
+
+header .nav-item a::after{
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: black;
+  height: 1px;
+  transform: scale(0);
+  transition: all .3s;
+}
+
+header .nav-item a:hover::after{
+  transform: scale(1);
+}
+.slider{
+  margin-bottom: 50px;
+}
+.post-category,
+.link-more{
+   font-family: "ubuntu",sans-serif;
+   font-size: 14px;
+   color: #b4ad9e;
+   text-transform: uppercase;
+   font-weight: 300;
+
+}
+.post-title a{
+     color:  #626262;
+
+}
+
+.grid-posts{
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+}
+.grid-posts .card{
+  border: none;
+  margin-bottom: 100px;
+}
+.grid-posts .card-body{
+  padding-left: 0;
+  padding-right: 0;
+}
+.grid-posts .card-img-top{
+
+max-height: 290px;
+border-radius: 0px;
+
+
+}
+.load-more span{
+  display: none;
+}
+padding: 1rem 2rem;
+border-color: #626262;
+border-radius: 0;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
